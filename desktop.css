@@ -1,0 +1,167 @@
+/* For desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* navbar starts  */
+[class*="col-"]{
+    float:left;
+}
+
+.navbar::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.nav-logo{
+    text-align:left;
+}
+
+.nav-heading h1{
+    text-align:right;
+}
+
+.navbar-menu{
+    flex-direction:row;
+    justify-content:flex-end;
+}
+
+.navbar-menu a{
+    background-color:transparent;
+    margin:20px 0;
+}
+/* navbar ends  */
+
+/* profile starts  */
+.top-weather-icon{
+    top:25px;
+    right:140px;
+    transition:width 2s, transform 2s;
+}
+
+.top-weather-icon:hover{
+    width:160px;
+    
+}
+
+.profile-heading p {
+    width:50%;
+}
+
+.bottom-weather-icon{
+    bottom:40px;
+    left:140px;
+    transition:width 2s, transform 2s;
+}
+
+.bottom-weather-icon:hover{
+    width:160px;  
+}
+/* profile ends  */
+
+/* about me starts here  */
+.about-me-image{
+    margin-top:100px;
+}
+.about-me-image img{
+    /* margin-top:120px; */
+    width:250px;
+    height:270px;
+}
+
+.about-me-desc p{
+    text-align:justify; /* or left */
+}
+
+.about-me-sec::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+/* about me ends here  */
+
+/* professional experience starts here  */
+
+    .work-experience{
+        padding-right:10px;
+    }
+
+    .education{
+        padding:0 5px;
+    }
+
+    .skill{
+        padding-left:10px;
+    }
+
+    .professional-experience .card{
+        height:740px;
+        overflow:auto;
+    }
+
+/* professional experience ends here  */
+
+/* contact me section starts from here  */
+
+    .achievement-sec{
+        padding-right:50px;
+    }
+
+    /* .contact-me-sec{
+        padding:0 10px;
+    } */
+
+    .contact-me-sec button{
+        width:150px;
+    }
+
+    .more-contact-sec{
+        position:relative;
+        padding-top:0px;
+        /* border:1px solid black; */
+        height:450px;
+    }
+
+    .icon-button{
+        /* padding:50px 120px 0 120px; */
+        position:absolute;
+
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        /* border:1px solid black; */
+    }
+    
+    .icon-button button{
+        width:50px;
+        height:50px;
+        margin:6px 6px;
+    }
+
+/* contact me section ends here  */
+
+/* footer section starts here  */
+footer{
+    padding-top:20px;
+}
+
+.footer-menu a{
+    display:inline;
+    margin:0 15px;
+    font-size:1.3rem;
+}
+
+.copyright p{
+    margin:0;
+    font-size:1rem;
+}
